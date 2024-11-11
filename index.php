@@ -1,5 +1,4 @@
 <?php
-require 'vendor/autoload.php';
     session_start();
     if (isset($_SESSION['user_id'])) {
        // Пользователь уже авторизован, перенаправляем его на главную страницу
@@ -23,7 +22,7 @@ require 'vendor/autoload.php';
     <body>
 
     <h1>Регистрация</h1>
-    <form method="POST" action="auth.php">
+    <form method="POST" action="src/auth.php">
         <input type="text" name="username" placeholder="Имя пользователя" required>
         <input type="password" name="password" placeholder="Пароль" required>
         <input type="color" name="background_color" placeholder="Фоновый цвет">
@@ -32,11 +31,11 @@ require 'vendor/autoload.php';
     </form>
 
     <h1>Авторизация</h1>
-    <form method="POST" action="auth.php">
+    <form method="POST" action="src/auth.php">
         <input type="text" name="username" placeholder="Имя пользователя" required>
         <input type="password" name="password" placeholder="Пароль" required>
         <button type="submit" name="login">Войти</button>
     </form>
 
     </body>
-    </html>
+</html>
