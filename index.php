@@ -1,4 +1,5 @@
 <?php
+    require 'vendor/autoload.php';
     session_start();
     if (isset($_SESSION['user_id'])) {
        // Пользователь уже авторизован, перенаправляем его на главную страницу
